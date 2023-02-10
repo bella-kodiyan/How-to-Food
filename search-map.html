@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search By Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-left">
+            <!-- switch image -->
+
+            <div class="navbuttons">
+                <button class="menu-buttons"><a href="homepage.html">HOW TO FOOD</a></button>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Last Visited</button>
+                    <div class="dropdown-content">
+                        <a href="france.html">France</a>
+                        <a href="china.html">China</a>
+                        <a href="japan.html">Japan</a>
+                    </div>
+                </div>
+
+                <button class="menu-buttons"><a href="mappage.html">Search By Map</a></button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="https://lh3.googleusercontent.com/gKyXaFmaTFRn7m1gxJzvCDSuwoGpJE69CIvoCpj09C84iCLSyKVTMSeCvAXac2TshW48WmM3E-OfM-frjSPMqMWXNqRCphkV4UZO9gHJBg"
+                    height="20px" width="auto">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon ">
+                <button class="menu-buttons"><a href="profile.html">About Us</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- map -->
+    <header style="padding:128px 16px">
+        <iframe src="https://createaclickablemap.com/map.php?id=116091&maplocation=world&online=true" width="900"
+            height="525" style="border: none;" class="map"></iframe>
+        <script>if (window.addEventListener) { window.addEventListener("message", function (event) { if (event.data.length >= 22) { if (event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent) { window.attachEvent("message", function (event) { if (event.data.length >= 22) { if (event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); }</script>
+    </header>
+
+</body>
+
+</html>
